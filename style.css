@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url(assets/IMG_20250126_205433184_HDR.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  height: 100%;
+  width: 100%;
+}
+.navbar{
+  height: 4rem;
+  width: 100%;
+  border-bottom: solid white 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  z-index: 1000; /* Ensures the navbar stays on top */
+}
+.heading:hover{
+  color: black;
+  transform: scale(1.05);
+  margin-left: rem;
+}
+.heading{
+  margin-left: 2rem;
+  font-size: 4.5rem;
+  transition: color .3s ease;
+  cursor: default;
+
+}
+.menu{
+  width: 25rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-right: 4rem;
+
+}
+.menu-items:hover{
+  cursor: pointer;
+  color: black;
+  transform: scale(1.1);
+
+}
+.menu-items{
+  font-size: 1.25rem;
+  transition: color .3s ease;
+}
+h2, li{
+  color: white;
+}
+.main{
+  height: calc(100% - 4rem);
+  width: 100%;
+  border: solid white 1px;
+}
+.intro{
+  height: 40%;
+  width: 35%;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  border-radius: 1rem ;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  
+
+}
+.intro-text{
+  margin: 1rem;
+  color: white;
+  font-size: 1.3rem;
+  word-spacing: 1rem;
+  line-height: 1.9rem;
+}
